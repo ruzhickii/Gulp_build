@@ -1,8 +1,11 @@
 'use strict';
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
+var gulp = require('gulp'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    rigger = require('gulp-rigger'),
+    livereload = require('gulp-livereload'),
+    connect = require('gulp-connect');
 
 gulp.task('sass', function(){
    gulp.src('./src/scss/*.scss')
@@ -18,3 +21,24 @@ gulp.task('sass', function(){
 gulp.task('sass:watch', function () {
    gulp.watch('./src/scss/*.scss', ['sass']);
 });
+
+gulp.task('html', function(){
+    gulp.src('./src/html/*.html')
+        .pipe(rigger())
+        .pipe(gulp.dest('./build'))
+});
+
+gulp.task('watch', function(){
+    livereload.listen();
+    gulp.watch('./src/scss/*.scss', ['sass']).on('change', livereload.changed);
+    gulp.watch('./src/html/*.html', ['html']).on('change', livereload.changed);
+});
+
+gulp.task('connect', function () {
+    connect.server({
+        root: 'build/',
+        livereload: true
+    });
+});
+
+gulp.task('default', ['sass', 'html', 'connect', 'watch']);

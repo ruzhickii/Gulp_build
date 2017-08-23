@@ -1,0 +1,8 @@
+body {
+  background: #ccc; }
+  body div {
+    background: #000;
+    border: 2px solid red; }
+    body div h1 {
+      color: #fff;
+      text-align: center; }

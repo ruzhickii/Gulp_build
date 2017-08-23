@@ -1,2 +1,18 @@
+$white: #fff;
+$black: #000;
+$gray: #ccc;
 
+body {
+    background: $gray;
+
+    div {
+        background: $black;
+        border:2px solid red;
+
+        h1 {
+            color: $white;
+            text-align: center;
+        }
+    }
+}
 
