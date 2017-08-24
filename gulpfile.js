@@ -40,6 +40,7 @@ gulp.task('watch', function(){
 
 });
 
+
 gulp.task('image-min', function () {
     return gulp.src('./src/img/**/*')
         .pipe(imagemin())
