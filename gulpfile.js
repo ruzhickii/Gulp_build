@@ -5,7 +5,9 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     rigger = require('gulp-rigger'),
     livereload = require('gulp-livereload'),
+    imagemin = require('gulp-imagemin'),
     connect = require('gulp-connect');
+
 
 gulp.task('sass', function(){
    gulp.src('./src/scss/*.scss')
@@ -18,9 +20,11 @@ gulp.task('sass', function(){
        }))
 });
 
+
 gulp.task('sass:watch', function () {
    gulp.watch('./src/scss/*.scss', ['sass']);
 });
+
 
 gulp.task('html', function(){
     gulp.src('./src/html/*.html')
@@ -28,11 +32,20 @@ gulp.task('html', function(){
         .pipe(gulp.dest('./build'))
 });
 
+
 gulp.task('watch', function(){
     livereload.listen();
-    gulp.watch('./src/scss/*.scss', ['sass']).on('change', livereload.changed);
     gulp.watch('./src/html/*.html', ['html']).on('change', livereload.changed);
+    gulp.watch('./src/scss/*.scss', ['sass']).on('change', livereload.changed);
+
 });
+
+gulp.task('image-min', function () {
+    return gulp.src('./src/img/**/*')
+        .pipe(imagemin())
+        .pipe(gulp.dest('./build/img/'))
+});
+
 
 gulp.task('connect', function () {
     connect.server({
@@ -41,4 +54,5 @@ gulp.task('connect', function () {
     });
 });
 
-gulp.task('default', ['sass', 'html', 'connect', 'watch']);
+
+gulp.task('default', ['sass', 'html', 'connect', 'watch', 'image-min']);
