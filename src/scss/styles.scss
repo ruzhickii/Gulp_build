@@ -24,11 +24,6 @@ header {
             align-items: center;
             flex-direction: row;
             list-style-type: none;
-
-
-            @media (max-width: 1024px) {
-                display: none;
-            }
         }
 
         .navigation_item {
@@ -216,7 +211,7 @@ content {
             padding-top: 85px;
             margin: 0;
             color: #fff;
-            font-size: 65px;
+            font-size: 60px;
             text-align: center;
             text-transform: uppercase;
             font-family: Roboto;
@@ -254,7 +249,7 @@ content {
     }
 
     .container {
-        width: 1400px;
+        max-width: 1400px;
         margin: 0 auto;
 
         .inputs-wrapper {
@@ -345,9 +340,268 @@ content {
             }
         }
 
+        .cards-wrapper {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .small-cards {
+                margin-right: 30px;
+
+                .back-end-card {
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+                    margin-bottom: 30px;
+
+
+                    .back-end-card-img {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        width: 635px;
+                        height: 355px;
+                        background: url(./img/bg1.jpg) center center no-repeat;
+                        background-size: cover;
+
+                        .back-end-article-name {
+                            background: #fbaf5d;
+                            max-width: 200px;
+                            margin-left: 35px;
+
+                            p {
+                                margin: 0;
+                                padding: 5px 0 5px 0;
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-weight: bold;
+                                font-family: Roboto;
+
+                            }
+                        }
+                    }
+
+                    .back-end-title-name {
+                        padding: 10px 0px 55px 20px;
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        font-family: Roboto;
+                        font-weight: 300;
+                    }
+                }
+
+                .software-card {
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+                    margin-bottom: 30px;
+
+
+                    .software-card-img {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        width: 635px;
+                        height: 240px;
+                        background: url(./img/bg3.jpg) center center no-repeat;
+                        background-size: cover;
+
+                        .software-article-name {
+                            background: #5674b9;
+                            max-width: 200px;
+                            margin-left: 35px;
+
+                            p {
+                                margin: 0;
+                                padding: 5px 0 5px 0;
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-weight: bold;
+                                font-family: Roboto;
+
+                            }
+                        }
+                    }
+
+                    .software-title-name {
+                        padding: 10px 0 10px 20px;
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        font-family: Roboto;
+                        font-weight: 300;
+                    }
+                }
+
+                .consulting-card {
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+                    margin-bottom: 30px;
+
+
+                    .consulting-card-img {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        width: 635px;
+                        height: 560px;
+                        background: url(./img/bg5.jpg) center center no-repeat;
+                        background-size: cover;
+
+                        .consulting-article-name {
+                            background: #c69c6d;
+                            max-width: 200px;
+                            margin-left: 35px;
+
+                            p {
+                                margin: 0;
+                                padding: 5px 0 5px 0;
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-weight: bold;
+                                font-family: Roboto;
+
+                            }
+                        }
+                    }
+
+                    .consulting-title-name {
+                        padding: 10px 0px 55px 20px;
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        font-family: Roboto;
+                        font-weight: 300;
+                    }
+                }
+            }
+
+            .big-cards {
+
+                .front-end-card {
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+                    margin-bottom: 30px;
+
+
+                    .front-end-card-img {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        width: 734px;
+                        height: 510px;
+                        background: url(./img/bg2.jpg) center center no-repeat;
+                        background-size: cover;
+
+                        .front-end-article-name {
+                            background: #7cc576;
+                            max-width: 200px;
+                            margin-left: 35px;
+
+                            p {
+                                margin: 0;
+                                padding: 5px 0 5px 0;
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-weight: bold;
+                                font-family: Roboto;
+
+                            }
+                        }
+                    }
+
+                    .front-end-title-name {
+                        padding: 10px 0 35px 20px;
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        font-family: Roboto;
+                        font-weight: 300;
+                    }
+                }
+
+                .mobile-card {
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+                    margin-bottom: 30px;
+
+
+                    .mobile-card-img {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        width: 734px;
+                        height: 350px;
+                        background: url(./img/bg4.jpg) center center no-repeat;
+                        background-size: cover;
+
+                        .mobile-article-name {
+                            background: #f26d7d;
+                            max-width: 200px;
+                            margin-left: 35px;
+
+                            p {
+                                margin: 0;
+                                padding: 5px 0 5px 0;
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-weight: bold;
+                                font-family: Roboto;
+
+                            }
+                        }
+                    }
+
+                    .mobile-title-name {
+                        padding: 10px 0 30px 20px;
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        font-family: Roboto;
+                        font-weight: 300;
+                    }
+                }
+
+                .company-card {
+                    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+                    margin-bottom: 30px;
+
+
+                    .company-card-img {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        width: 734px;
+                        height: 296px;
+                        background: url(./img/bg6.jpg) center center no-repeat;
+                        background-size: cover;
+
+                        .company-article-name {
+                            background: #f06eaa;
+                            max-width: 200px;
+                            margin-left: 35px;
+
+                            p {
+                                margin: 0;
+                                padding: 5px 0 5px 0;
+                                text-align: center;
+                                color: #fff;
+                                text-transform: uppercase;
+                                font-size: 25px;
+                                font-weight: bold;
+                                font-family: Roboto;
+
+                            }
+                        }
+                    }
+
+                    .company-title-name {
+                        padding: 10px 0px 55px 20px;
+                        font-size: 50px;
+                        text-transform: uppercase;
+                        font-family: Roboto;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
         .show-more {
             width: 100%;
-            margin: 48px 0 100px 0;
+            margin: 20px 0 100px 0;
             height: 100px;
             font-size: 49px;
             text-transform: uppercase;

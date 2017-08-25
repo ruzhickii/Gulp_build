@@ -21,9 +21,6 @@ header {
       align-items: center;
       flex-direction: row;
       list-style-type: none; }
-      @media (max-width: 1024px) {
-        header nav .navigation {
-          display: none; } }
     header nav .navigation_item {
       position: relative;
       height: 100%;
@@ -152,7 +149,7 @@ content .bg-blog {
     padding-top: 85px;
     margin: 0;
     color: #fff;
-    font-size: 65px;
+    font-size: 60px;
     text-align: center;
     text-transform: uppercase;
     font-family: Roboto; }
@@ -183,7 +180,7 @@ content .search-block {
     right: 0; }
 
 content .container {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto; }
   content .container .inputs-wrapper {
     box-shadow: 0 0 5px black;
@@ -247,9 +244,189 @@ content .container {
       font-weight: 400;
       text-transform: uppercase;
       box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.45); }
+  content .container .cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    content .container .cards-wrapper .small-cards {
+      margin-right: 30px; }
+      content .container .cards-wrapper .small-cards .back-end-card {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+        margin-bottom: 30px; }
+        content .container .cards-wrapper .small-cards .back-end-card .back-end-card-img {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 635px;
+          height: 355px;
+          background: url(./img/bg1.jpg) center center no-repeat;
+          background-size: cover; }
+          content .container .cards-wrapper .small-cards .back-end-card .back-end-card-img .back-end-article-name {
+            background: #fbaf5d;
+            max-width: 200px;
+            margin-left: 35px; }
+            content .container .cards-wrapper .small-cards .back-end-card .back-end-card-img .back-end-article-name p {
+              margin: 0;
+              padding: 5px 0 5px 0;
+              text-align: center;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 25px;
+              font-weight: bold;
+              font-family: Roboto; }
+        content .container .cards-wrapper .small-cards .back-end-card .back-end-title-name {
+          padding: 10px 0px 55px 20px;
+          font-size: 50px;
+          text-transform: uppercase;
+          font-family: Roboto;
+          font-weight: 300; }
+      content .container .cards-wrapper .small-cards .software-card {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+        margin-bottom: 30px; }
+        content .container .cards-wrapper .small-cards .software-card .software-card-img {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 635px;
+          height: 240px;
+          background: url(./img/bg3.jpg) center center no-repeat;
+          background-size: cover; }
+          content .container .cards-wrapper .small-cards .software-card .software-card-img .software-article-name {
+            background: #5674b9;
+            max-width: 200px;
+            margin-left: 35px; }
+            content .container .cards-wrapper .small-cards .software-card .software-card-img .software-article-name p {
+              margin: 0;
+              padding: 5px 0 5px 0;
+              text-align: center;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 25px;
+              font-weight: bold;
+              font-family: Roboto; }
+        content .container .cards-wrapper .small-cards .software-card .software-title-name {
+          padding: 10px 0 10px 20px;
+          font-size: 50px;
+          text-transform: uppercase;
+          font-family: Roboto;
+          font-weight: 300; }
+      content .container .cards-wrapper .small-cards .consulting-card {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+        margin-bottom: 30px; }
+        content .container .cards-wrapper .small-cards .consulting-card .consulting-card-img {
+          display: flex;
+          flex-direction: column-reverse;
+          width: 635px;
+          height: 560px;
+          background: url(./img/bg5.jpg) center center no-repeat;
+          background-size: cover; }
+          content .container .cards-wrapper .small-cards .consulting-card .consulting-card-img .consulting-article-name {
+            background: #c69c6d;
+            max-width: 200px;
+            margin-left: 35px; }
+            content .container .cards-wrapper .small-cards .consulting-card .consulting-card-img .consulting-article-name p {
+              margin: 0;
+              padding: 5px 0 5px 0;
+              text-align: center;
+              color: #fff;
+              text-transform: uppercase;
+              font-size: 25px;
+              font-weight: bold;
+              font-family: Roboto; }
+        content .container .cards-wrapper .small-cards .consulting-card .consulting-title-name {
+          padding: 10px 0px 55px 20px;
+          font-size: 50px;
+          text-transform: uppercase;
+          font-family: Roboto;
+          font-weight: 300; }
+    content .container .cards-wrapper .big-cards .front-end-card {
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+      margin-bottom: 30px; }
+      content .container .cards-wrapper .big-cards .front-end-card .front-end-card-img {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 734px;
+        height: 510px;
+        background: url(./img/bg2.jpg) center center no-repeat;
+        background-size: cover; }
+        content .container .cards-wrapper .big-cards .front-end-card .front-end-card-img .front-end-article-name {
+          background: #7cc576;
+          max-width: 200px;
+          margin-left: 35px; }
+          content .container .cards-wrapper .big-cards .front-end-card .front-end-card-img .front-end-article-name p {
+            margin: 0;
+            padding: 5px 0 5px 0;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Roboto; }
+      content .container .cards-wrapper .big-cards .front-end-card .front-end-title-name {
+        padding: 10px 0 35px 20px;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-weight: 300; }
+    content .container .cards-wrapper .big-cards .mobile-card {
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+      margin-bottom: 30px; }
+      content .container .cards-wrapper .big-cards .mobile-card .mobile-card-img {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 734px;
+        height: 350px;
+        background: url(./img/bg4.jpg) center center no-repeat;
+        background-size: cover; }
+        content .container .cards-wrapper .big-cards .mobile-card .mobile-card-img .mobile-article-name {
+          background: #f26d7d;
+          max-width: 200px;
+          margin-left: 35px; }
+          content .container .cards-wrapper .big-cards .mobile-card .mobile-card-img .mobile-article-name p {
+            margin: 0;
+            padding: 5px 0 5px 0;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Roboto; }
+      content .container .cards-wrapper .big-cards .mobile-card .mobile-title-name {
+        padding: 10px 0 30px 20px;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-weight: 300; }
+    content .container .cards-wrapper .big-cards .company-card {
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.31);
+      margin-bottom: 30px; }
+      content .container .cards-wrapper .big-cards .company-card .company-card-img {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 734px;
+        height: 296px;
+        background: url(./img/bg6.jpg) center center no-repeat;
+        background-size: cover; }
+        content .container .cards-wrapper .big-cards .company-card .company-card-img .company-article-name {
+          background: #f06eaa;
+          max-width: 200px;
+          margin-left: 35px; }
+          content .container .cards-wrapper .big-cards .company-card .company-card-img .company-article-name p {
+            margin: 0;
+            padding: 5px 0 5px 0;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Roboto; }
+      content .container .cards-wrapper .big-cards .company-card .company-title-name {
+        padding: 10px 0px 55px 20px;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-family: Roboto;
+        font-weight: 300; }
   content .container .show-more {
     width: 100%;
-    margin: 48px 0 100px 0;
+    margin: 20px 0 100px 0;
     height: 100px;
     font-size: 49px;
     text-transform: uppercase;
